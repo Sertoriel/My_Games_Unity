@@ -17,6 +17,8 @@ To Download Click Here: https://github.com/Sertoriel/My_Games_Unity/raw/main/Ubi
 
 2. **Fork and Understand**: If you're intrigued by the mechanics of the game and want to gain a deeper understanding of how it works, feel free to fork this repository. You can explore, tinker, and even contribute to enhance the game's functionality.
 
+Note: To fully experience Ubiqua Game, remember to integrate the "Asset" folder into your Unity 3D project.
+
 ### Join the Ubiqua Community
 
 We believe in the power of community and engagement. Your involvement and feedback are vital in shaping the Ubiqua Universe. Together, we can make this gaming experience even more extraordinary.
