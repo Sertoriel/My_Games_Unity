@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: a837300df6c8b864982d6fd2ad3f68c4
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - DT Phudu
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 030dc6179a0e06a419cece9cc06cff4b, type: 3}
+  - {fileID: 12800000, guid: e2757ddf95e3e294183e1d57c5b97025, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
