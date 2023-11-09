@@ -13,6 +13,7 @@ The Ubiqua Universe is not just another game; it's an immersive explorer's parad
 This GitHub repository is your gateway to the Ubiqua Universe. Here, you have two exciting options:
 
 1. **Download the Game**: Immerse yourself in the adventure firsthand by downloading and playing the game. It's an opportunity to experience the thrill of exploration and engagement, all at your own pace.
+To Download Click Here: https://github.com/Sertoriel/My_Games_Unity/raw/main/Ubiqua%20Universe!/UBQU.exe
 
 2. **Fork and Understand**: If you're intrigued by the mechanics of the game and want to gain a deeper understanding of how it works, feel free to fork this repository. You can explore, tinker, and even contribute to enhance the game's functionality.
 
