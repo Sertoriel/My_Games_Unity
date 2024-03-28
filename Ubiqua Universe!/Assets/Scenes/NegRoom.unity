@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.080459945, g: 0.09985892, b: 0.30126905, a: 1}
+  m_IndirectSpecularColor: {r: 0.10066528, g: 0.12504922, b: 0.31773084, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 6d6e889aff1e4a2468548ad9dbb8098b, type: 2}
   m_LightingSettings: {fileID: 661798322}
 --- !u!196 &4
 NavMeshSettings:
@@ -1484,6 +1484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pontos: 0
+  temposRegistradosGlobal: []
 --- !u!4 &178059070
 Transform:
   m_ObjectHideFlags: 0
@@ -3731,7 +3732,7 @@ PrefabInstance:
       objectReference: {fileID: 1743043608}
     - target: {fileID: 851928481981364762, guid: d0d8548a33878bb49bcf188d84933908, type: 3}
       propertyPath: Canvas
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 851928481981364762, guid: d0d8548a33878bb49bcf188d84933908, type: 3}
       propertyPath: nomeCena
@@ -3775,7 +3776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1503116080372065100, guid: d0d8548a33878bb49bcf188d84933908, type: 3}
       propertyPath: CameraSense
-      value: 0.45
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 2057348004497873722, guid: d0d8548a33878bb49bcf188d84933908, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4602,8 +4603,8 @@ LightingSettings:
   m_PrefabAsset: {fileID: 0}
   m_Name: Settings.lighting
   serializedVersion: 4
-  m_GIWorkflowMode: 0
-  m_EnableBakedLightmaps: 0
+  m_GIWorkflowMode: 1
+  m_EnableBakedLightmaps: 1
   m_EnableRealtimeLightmaps: 0
   m_RealtimeEnvironmentLighting: 1
   m_BounceScale: 1

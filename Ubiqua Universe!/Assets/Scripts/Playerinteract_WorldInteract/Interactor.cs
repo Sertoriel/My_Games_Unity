@@ -24,8 +24,8 @@ public class Interactor : MonoBehaviour
     private void Start()
     {
         // Desativa o canvas e o botão no início
-        interactCanvas.gameObject.SetActive(Canvas);
-        interactButton.gameObject.SetActive(Btm);
+        interactCanvas.gameObject.SetActive(Canvas = false);
+        interactButton.gameObject.SetActive(Btm = false);
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = false;
@@ -35,7 +35,7 @@ public class Interactor : MonoBehaviour
 
     void Update()
     {
-        if (Btm == true)
+        if (Canvas == true)
         {
             // Atualiza a detecção constantemente enquanto o canvas estiver ativo
             CheckForColliders();
@@ -49,18 +49,18 @@ public class Interactor : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red; 
-        Gizmos.DrawWireSphere(transform.position + transform.forward * sphereDistance, sphereRadius); 
-        Gizmos.DrawLine(transform.position, transform.position + transform.forward * sphereDistance); 
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position + transform.forward * sphereDistance, sphereRadius);
+        Gizmos.DrawLine(transform.position, transform.position + transform.forward * sphereDistance);
     }
 
     void CheckForColliders()
     {
         Collider[] hitColliders = Physics.OverlapSphere(transform.position + transform.forward * sphereDistance, sphereRadius, LayerMask.GetMask("Interactable"));
-        
-        if (hitColliders.Length > 0) 
+
+        if (hitColliders.Length > 0)
         {
-            foreach (var hitCollider in hitColliders) 
+            foreach (var hitCollider in hitColliders)
             {
                 Debug.Log(hitCollider.name + " was hit!");
             }
@@ -69,20 +69,18 @@ public class Interactor : MonoBehaviour
             if (!isShown) Texto.ShowFloatText(textoAmostrar);
             isShown = true;
 
-            // Ativa o canvas e o botão quando um colisor Interactable for detectado
-            interactCanvas.gameObject.SetActive(Canvas);
-            interactButton.gameObject.SetActive(true);
-            interactButtonText.text = "Acessar MiniGame";
-        } 
-        else 
+            // Ativa o botão quando um colisor Interactable for detectado
+            interactButton.gameObject.SetActive(Btm = true);
+            interactButtonText.text = "Acessar MiniGame UBÍQUA!";
+        }
+        else
         {
             // Desativa o Texto.
             if (isShown) Texto.HideFloatText();
             isShown = false;
 
-            // Desativa o canvas e o botão se nenhum colisor Interactable for detectado
-            interactCanvas.gameObject.SetActive(Canvas);
-            interactButton.gameObject.SetActive(Btm);
+            // Desativa o botão se nenhum colisor Interactable for detectado
+            interactButton.gameObject.SetActive(Btm = false);
         }
     }
 

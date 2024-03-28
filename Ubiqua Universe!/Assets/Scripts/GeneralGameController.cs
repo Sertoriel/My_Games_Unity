@@ -64,7 +64,7 @@ public class GeneralGameController : MonoBehaviour
 
     void RememberCurrentScene()
     {
-        if(SceneManager.GetActiveScene().name != "MainScene")
+        if (SceneManager.GetActiveScene().name != "MainScene")
         {
             string currentSceneName = SceneManager.GetActiveScene().name;
             PlayerPrefs.SetString(lastSceneKey, currentSceneName);
@@ -117,7 +117,7 @@ public class GeneralGameController : MonoBehaviour
         }
     }
 
-    private void ResetarPontos()
+    public void ResetarPontos()
     {
         pontos = 0;
         temposRegistradosGlobal.Clear();

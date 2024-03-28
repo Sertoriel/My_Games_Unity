@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 405c35a8f111ccc4f879e82a3580cb5f, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 0d26aec5f2d69a143a57fcca29ee5fcf, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -998,7 +998,7 @@ PrefabInstance:
       objectReference: {fileID: 1980320097}
     - target: {fileID: 851928481981364762, guid: d0d8548a33878bb49bcf188d84933908, type: 3}
       propertyPath: Canvas
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 851928481981364762, guid: d0d8548a33878bb49bcf188d84933908, type: 3}
       propertyPath: nomeCena
@@ -1042,7 +1042,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1503116080372065100, guid: d0d8548a33878bb49bcf188d84933908, type: 3}
       propertyPath: CameraSense
-      value: 0.45
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 2057348004497873722, guid: d0d8548a33878bb49bcf188d84933908, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1996,7 +1996,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 1
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -2866,7 +2866,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.75849056, g: 1, b: 0.96166176, a: 1}
-  m_Intensity: 1.6
+  m_Intensity: 1
   m_Range: 2.2
   m_SpotAngle: 67
   m_InnerSpotAngle: 21.80208
@@ -3023,11 +3023,11 @@ Light:
   m_Color: {r: 0.75849056, g: 1, b: 0.96166176, a: 1}
   m_Intensity: 1
   m_Range: 50
-  m_SpotAngle: 67
+  m_SpotAngle: 44
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -4027,13 +4027,13 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.75849056, g: 1, b: 0.96166176, a: 1}
-  m_Intensity: 1.6
+  m_Intensity: 1
   m_Range: 2.2
   m_SpotAngle: 67
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -4085,7 +4085,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189948315}
   m_LocalRotation: {x: -0.14867246, y: -0, z: -0, w: 0.98888654}
-  m_LocalPosition: {x: -341.3228, y: 123.23904, z: -11.52071}
+  m_LocalPosition: {x: -341.3228, y: 123.239, z: -11.518}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5335,6 +5335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pontos: 0
+  temposRegistradosGlobal: []
 --- !u!4 &1432728597
 Transform:
   m_ObjectHideFlags: 0
@@ -6604,7 +6605,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.9851415, b: 0.9575472, a: 1}
-  m_Intensity: 1.25
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -6613,7 +6614,7 @@ Light:
     m_Type: 2
     m_Resolution: 3
     m_CustomResolution: -1
-    m_Strength: 0.6
+    m_Strength: 0.499
     m_Bias: 0.3
     m_NormalBias: 0
     m_NearPlane: 0.2
@@ -6643,7 +6644,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 1
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -8266,13 +8267,13 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.75849056, g: 1, b: 0.96166176, a: 1}
-  m_Intensity: 1.6
-  m_Range: 2.2
+  m_Intensity: 1
+  m_Range: 1.27
   m_SpotAngle: 67
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -8324,7 +8325,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030605903}
   m_LocalRotation: {x: -0.14867246, y: -0, z: -0, w: 0.98888654}
-  m_LocalPosition: {x: -343.82483, y: 123.23904, z: -15.52371}
+  m_LocalPosition: {x: -343.82483, y: 123.245, z: -15.505}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

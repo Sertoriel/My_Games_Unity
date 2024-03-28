@@ -21,7 +21,7 @@ public class GameControllerSpon : MonoBehaviour, IGameController
     public int index = 0;
 
     [SerializeField] private string sceneToLoad;  // O nome da cena que você quer carregar
-     // Nome da cena para onde o jogador será mandado
+                                                  // Nome da cena para onde o jogador será mandado
     [SerializeField] private string cenaParaEnviar;
 
     private void Start()
@@ -41,7 +41,7 @@ public class GameControllerSpon : MonoBehaviour, IGameController
         score2.text = "Score: " + pontos;
 
         Dubletap();
-    
+
         if (Input.GetKeyDown(KeyCode.Q))
         {
             GeneralGameController gameController = FindObjectOfType<GeneralGameController>();
@@ -53,17 +53,23 @@ public class GameControllerSpon : MonoBehaviour, IGameController
     // Método que é chamado quando o jogador toca na tela
     public void Dubletap()
     {
-        if(Input.touchCount > 0 && numquest >= 6){
+        if (Input.touchCount > 0 && numquest >= 6)
+        {
             Debug.Log("Tocou");
             Touch t = Input.GetTouch(0);
-            
-            DubletapC ++;
 
-                if (!string.IsNullOrEmpty(cenaParaEnviar) && DubletapC ==2)
-                {
-                    // Manda o jogador para a cena
-                    SceneManager.LoadScene(cenaParaEnviar);
-                }
+            DubletapC++;
+
+            if (!string.IsNullOrEmpty(cenaParaEnviar) && DubletapC == 2)
+            {
+
+                GeneralGameController gameController = FindObjectOfType<GeneralGameController>();
+                gameController.AcumularPontos();
+                LoadSpecifiedScene();
+
+                // Manda o jogador para a cena
+                // SceneManager.LoadScene(cenaParaEnviar);
+            }
         }
     }
 
@@ -73,16 +79,19 @@ public class GameControllerSpon : MonoBehaviour, IGameController
         {
 
             numquest += 1;
-            pontos +=10;
+            pontos += 10;
             botao.MudarFonteResposta();
             cabecalho.AtualizarTexto();
             image.TrocarImagem();
             timer.RegistrarTempo();
             Debug.Log(pontos);
-            index ++;
+            index++;
 
-        }else{
-            if(pontos != 0){
+        }
+        else
+        {
+            if (pontos != 0)
+            {
                 pontos -= 1;
             }
         }
